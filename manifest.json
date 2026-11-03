@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Archive XML to CSV Exporter",
+  "version": "1.0.1",
+  "description": "Transform archival EAD/XML exports into configurable tabular views and export to CSV.",
+  "permissions": ["activeTab", "scripting", "sidePanel", "storage"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Open XML Table Exporter"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
